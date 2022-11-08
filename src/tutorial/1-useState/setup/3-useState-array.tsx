@@ -3,24 +3,35 @@ import { data } from "../../../data";
 
 type People = {
   id: number;
-  name: string;
+  name?: string;
 };
 
 const UseStateArray = () => {
-  const [people, setPeople] = useState<People[]>([data]);
+  const [people, setPeople] = useState<People[]>(data);
+
+  const deleteUser = (id: number) => {
+    const updateList = people.filter((person) => person.id !== id);
+    setPeople(updateList);
+  };
+
   console.log(setPeople);
   console.log(people);
   return (
     <>
       {people.map((person) => {
-        const { id, name } = person;
+        const { name, id } = person;
         return (
-          <div>
-            <h1>{id}</h1>
-            <h2>{name}</h2>
+          <div key={id} className="item">
+            <h4>{name}</h4>
+            <button type="button" onClick={() => deleteUser(id)}>
+              remove
+            </button>
           </div>
         );
       })}
+      <button className="btn" type="button" onClick={() => setPeople([])}>
+        Delete All Users
+      </button>
     </>
   );
 };
