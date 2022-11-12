@@ -17,6 +17,9 @@ const UseStateCounter = () => {
     setValue(0);
   };
 
+  // purpose of below function is that without referencing the previous
+  // state since the timer is 2 seconds any additional clicks within
+  // that timeframe won't be updated. prevState reference fixes that.
   const complexIncrease = () => {
     setTimeout(() => {
       //   setValue(value + 1);
