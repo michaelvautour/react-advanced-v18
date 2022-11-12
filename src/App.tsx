@@ -1,10 +1,10 @@
 import React from "react";
-import UseStateBasics from "./tutorial/1-useState/setup/5a-useStateComplexCounter";
+import UseEffectBasics from "./tutorial/2-useEffect/setup/1b-useEffect-basics";
 
 function App() {
   return (
     <div className="container">
-      <UseStateBasics />
+      <UseEffectBasics />
     </div>
   );
 }
