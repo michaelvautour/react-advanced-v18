@@ -19,6 +19,8 @@ const UseEffectCleanup = () => {
       window.removeEventListener("resize", checkSize);
     };
   });
+  // Above is an example on preventing a memory leak. Although in this use case passing a closing []
+  // would have fixed issue, in some apps that add / remove events it may not always be the case
 
   console.log("render");
 
