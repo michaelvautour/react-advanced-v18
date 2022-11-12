@@ -1,5 +1,5 @@
 import React from "react";
-import UseEffectCleanup from "./tutorial/2-useEffect/setup/2-useEffect-cleanup";
+import UseEffectCleanup from "./tutorial/2-useEffect/setup/3-useEffect-fetch-data";
 
 function App() {
   return (
