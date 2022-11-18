@@ -30,7 +30,7 @@ const Index = () => {
     dispatch({ type: "CLOSE_MODAL" });
   };
 
-  // https://www.newline.co/@bespoyasov/how-to-use-usereducer-with-typescript-3918a332
+  // https://www.newline.co/@bespoyasov/how-to-use-usereducer-with-typescript--3918a332
 
   return (
     <>
