@@ -1,5 +1,7 @@
 ## Corresponding Projects
 
+#### Completed this part of coursework - keep for future reference/practice
+
 #### useState
 
 1. Birthday Reminder
